@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   selectContainer2.addEventListener("change", (event) => {
     const value = event.target.value;
 
-    fetch("http://localhost:8080/tratamiento", {
+    fetch("https://expert-system-1.fly.dev/tratamiento", {
       method: "POST",
       body: JSON.stringify({ sintoma: value }),
       headers: {
